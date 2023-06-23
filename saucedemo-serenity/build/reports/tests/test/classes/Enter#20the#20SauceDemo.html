@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Enter the SauceDemo</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Enter the SauceDemo</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Enter the SauceDemo</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">21.601s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Purchase process</td>
+<td class="success">21.601s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[92m|-- 1: Purchase process ({url=https://www.saucedemo.com/, user=standard_user, password=secret_sauce, firstname=Karen, lastname=Agualimpia, postalcode=12345})?[0m
+?[92m|---- Given the &quot;user&quot; login
+| https://www.saucedemo.com/ | standard_user | secret_sauce |?[0m
+?[92m|------ user opens the browser at https://www.saucedemo.com/?[0m
+?[92m|------ User login?[0m
+?[92m|-------- user clicks on Username?[0m
+?[92m|-------- user enters 'standard_user' into Username?[0m
+?[92m|-------- user clicks on Enter you parssword?[0m
+?[92m|-------- user enters 'secret_sauce' into Enter you parssword?[0m
+?[92m|-------- user clicks on Login button?[0m
+?[92m|---- When buy a product
+| Karen | Agualimpia | 12345 |?[0m
+?[92m|------ User add product?[0m
+?[92m|-------- user clicks on Inventory list?[0m
+?[92m|-------- user clicks on Product of inventory list?[0m
+?[92m|-------- user clicks on Add to cart button?[0m
+?[92m|------ User buy product?[0m
+?[92m|-------- user clicks on Shopping cart?[0m
+?[92m|-------- user clicks on Checkout button?[0m
+?[92m|-------- user enters 'Karen' into First name?[0m
+?[92m|-------- user enters 'Agualimpia' into Last name?[0m
+?[92m|-------- user enters 'Agualimpia' into Postal codigo?[0m
+?[92m|-------- user clicks on Continue button?[0m
+?[92m|-------- user clicks on Complete your profile?[0m
+?[92m|---- Then he should validate that product purchase was successfull?[0m
+?[92m|------ Then validate if?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>1687483536197	geckodriver	INFO	Listening on 127.0.0.1:63376
+1687483536433	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;&quot; &quot;--remote-debugging-port&quot; &quot;52369&quot; &quot;--remote-allow-hosts&quot; &quot;localhost&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\TATIAN~1\\AppData\\Local\\Temp\\rust_mozprofileGPdhBm&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1687483536779	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1687483536785	Marionette	INFO	Listening on port 49183
+Read port: 49183
+WebDriver BiDi listening on ws://127.0.0.1:52369
+1687483536953	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52369/devtools/browser/0c8b10e3-4465-4778-9b39-c35abc9ade83
+Jun 22, 2023 8:25:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+1687483547846	Marionette	INFO	Stopped listening on port 49183
+Dynamically enable window occlusion 1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Jun 22, 2023, 8:25:51 PM</p>
+</div>
+</div>
+</body>
+</html>

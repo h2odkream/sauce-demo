@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Enter the SauceDemo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-23T01:25:27" hostname="DESKTOP-6V1SMRN" time="21.601">
+  <properties/>
+  <testcase name="Purchase process" classname="Enter the SauceDemo" time="21.601"/>
+  <system-out><![CDATA[?[92m|-- 1: Purchase process ({url=https://www.saucedemo.com/, user=standard_user, password=secret_sauce, firstname=Karen, lastname=Agualimpia, postalcode=12345})?[0m
+?[92m|---- Given the "user" login
+| https://www.saucedemo.com/ | standard_user | secret_sauce |?[0m
+?[92m|------ user opens the browser at https://www.saucedemo.com/?[0m
+?[92m|------ User login?[0m
+?[92m|-------- user clicks on Username?[0m
+?[92m|-------- user enters 'standard_user' into Username?[0m
+?[92m|-------- user clicks on Enter you parssword?[0m
+?[92m|-------- user enters 'secret_sauce' into Enter you parssword?[0m
+?[92m|-------- user clicks on Login button?[0m
+?[92m|---- When buy a product
+| Karen | Agualimpia | 12345 |?[0m
+?[92m|------ User add product?[0m
+?[92m|-------- user clicks on Inventory list?[0m
+?[92m|-------- user clicks on Product of inventory list?[0m
+?[92m|-------- user clicks on Add to cart button?[0m
+?[92m|------ User buy product?[0m
+?[92m|-------- user clicks on Shopping cart?[0m
+?[92m|-------- user clicks on Checkout button?[0m
+?[92m|-------- user enters 'Karen' into First name?[0m
+?[92m|-------- user enters 'Agualimpia' into Last name?[0m
+?[92m|-------- user enters 'Agualimpia' into Postal codigo?[0m
+?[92m|-------- user clicks on Continue button?[0m
+?[92m|-------- user clicks on Complete your profile?[0m
+?[92m|---- Then he should validate that product purchase was successfull?[0m
+?[92m|------ Then validate if?[0m
+]]></system-out>
+  <system-err><![CDATA[1687483536197	geckodriver	INFO	Listening on 127.0.0.1:63376
+1687483536433	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "" "--remote-debugging-port" "52369" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TATIAN~1\\AppData\\Local\\Temp\\rust_mozprofileGPdhBm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1687483536779	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1687483536785	Marionette	INFO	Listening on port 49183
+Read port: 49183
+WebDriver BiDi listening on ws://127.0.0.1:52369
+1687483536953	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52369/devtools/browser/0c8b10e3-4465-4778-9b39-c35abc9ade83
+Jun 22, 2023 8:25:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1687483547846	Marionette	INFO	Stopped listening on port 49183
+Dynamically enable window occlusion 1
+]]></system-err>
+</testsuite>
